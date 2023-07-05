@@ -13,7 +13,7 @@ const Navbar = () =>{
         <div className="nav-container">
               <div className='nav-left'>
                 <img className="logo" src="https://seeklogo.com/images/P/pexels-logo-EFB9232709-seeklogo.com.png" alt="logo"/>
-            <h2 className='pexel'>Pexels</h2>
+            <h2 className='pexel1'>Pexels</h2>
             </div>
             <div className="nav-right">
             <select className="nav-explore-links">
@@ -30,7 +30,7 @@ const Navbar = () =>{
             <BsBell className="notification"/>
           </div> 
            <div className='profile'>
-            <BsPersonCircle className='profile'/>
+            <BsPersonCircle className='profile1'/>
       <select className='login'>
         <option className='login-links'></option>
         <option className='login-links'>Your Collections</option>
