@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans",sans-serif;
+  }
+
+  .nav-container{
+      width:99.1vw;
+      height:100vh;
+    display:flex;
+    justify-content:center;
+    column-gap: 60rem;
+   
+    flex-direction: row;
+    background-image: url("https://images.pexels.com/photos/16959094/pexels-photo-16959094.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=2000");
+    background-repeat: no-repeat;
+  }
+  .logo{
+    width:3rem;
+    height:3rem;
+    margin-top: 1rem;
+    display:flex;
+    justify-content:start;
+    border-radius: 20%;
+
+  }
+  .upload{
+    width:3rem;
+    height: 3rem;
+  }
+  .nav-left{
+    display: flex;
+   justify-content: start;
+    flex-direction: row;
+    padding-left: 4rem;
+  }
+  .nav-left:hover{
+  opacity:70%;
+cursor: pointer;
+    color: rgb(42, 42, 42);
+  }
+  .pexel{
+    margin-top: 1.5rem;
+    color: white;
+padding: 0.5rem;
+  }
+  .nav-right{
+    width:35rem;
+    height:2rem;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 1rem;
+
+  }
+  .nav-login-links{
+    height:1rem
+  }
+
+  .nav-explore-links{
+    width:5vw;
+    outline: none;
+    border:none;
+    color:white;
+    background-color: transparent;
+    font-size: 1.3rem
+  }
+.nav-explore
+  {
+color:black;
+margin-left:10px;
+  }
+  .license{
+    margin-top: 0.5rem;
+    font-size: 1.3rem;
+    color: white;
+  }
+
+  .profile{
+    color:white;
+    outline:none;
+    border:none;
+    background-color: transparent;
+  }
+  .login{
+    font-size: 1.3rem;
+    outline:none;
+    border:none;
+  
+
+    color:black;
+  }
+  .login-links
+  {
+    display: block;
+    width:2vw;
+    margin-left:10px;
+  }
+  .bell{
+    margin-top: 0.5rem;
+    color:white;
+    padding:0 1.8rem 0 1.8rem;
+  }
