@@ -59,7 +59,7 @@ padding: 0.5rem;
   }
 
   .nav-explore-links{
-    width:5vw;
+    width:5.5vw;
     outline: none;
     border:none;
     color:white;
@@ -85,6 +85,8 @@ margin-left:10px;
   }
   .login{
     font-size: 1.3rem;
+
+    
     outline:none;
     border:none;
   
