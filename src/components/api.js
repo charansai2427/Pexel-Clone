@@ -1,36 +1,43 @@
 import { createClient } from 'pexels';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Masonry from "react-masonry-css";
 import "../styles/api.css"
 export default function Client( ){
 const client = createClient('DnS6kIU35UjI6H608t9wBb6HN8ro2GFvK9msrGG0RoP97FdYHE07x4wC');
 const query = 'Nature';
 const [data,setData] = useState({photos:[]})
-
-client.photos.search({ query, per_page:500,page:8 }).then(res => {
-    console.log(res);
-    setData({photos:res.photos})
-});
+const [page,setPage] = useState(1)
 
 
+useEffect(()=>{
+    client.photos.search({ query, per_page:80,page}).then(res => {
+        console.log(res);
+        setData({photos:[...data.photos,...res.photos]})
+    });
+    
+},[page])
 
 
 return(
+    <>
     <Masonry
   breakpointCols={3}
   className="my-masonry-grid"
   columnClassName="my-masonry-grid_column"
-  columns={4}
+  columns={3}
   >
         {
         data&& data.photos.map((e)=>{
                 return(
                     <div>
-                        <img src={e.src.portrait}/>
+                        <img src={e.src.medium}/>
                     </div>
                 )
             })
         }
   </Masonry>
+  <button onClick={()=>setPage(page+1)}>Load More</button>
+
+  </>
 )
 }

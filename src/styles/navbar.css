@@ -5,9 +5,14 @@
     font-family: "Josefin Sans",sans-serif;
   }
 
+  .navBar{
+    width:100vw;
+    height:100vh;
+    background-image: url("https://images.pexels.com/photos/16959094/pexels-photo-16959094.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=2000");
+    background-repeat: no-repeat;
+  }
   .nav-container{
-      width:100vw;
-      height:100vh;
+   
     display:flex;
     justify-content:center;
     column-gap: 50rem;
@@ -112,3 +117,40 @@ margin-left:10px;
     padding:5px
   
   }
+
+  .titles{
+    color:white;
+    margin-left:35rem;
+    margin-top: 8rem;
+  }
+  .search{
+    height:5vh;
+    width:40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:1px solid;
+    background-color: white;
+      color:white;
+      margin-left:35rem;
+      margin-top: 2rem;
+  
+  }
+  .drag{
+    margin-top:0.8rem;
+    width:10rem;
+  }
+.find{
+  margin-top: 1rem;
+  width:25rem;
+  border:none;
+ outline:none;
+}
+.icon{
+  color:black;
+  cursor: pointer;
+  margin-top: 1rem;
+  &:hover{
+    color: green;
+  }
+}

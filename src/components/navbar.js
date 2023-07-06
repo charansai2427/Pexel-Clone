@@ -5,12 +5,17 @@ import { AiOutlineTwitter } from 'react-icons/ai'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { BiLogoPinterestAlt } from 'react-icons/bi'
 import { BiLogoYoutube } from 'react-icons/bi'
+import { CiImageOn } from 'react-icons/ci'
+import { AiOutlinePlaySquare } from "react-icons/ai"
+import  { BiSearchAlt2 } from "react-icons/bi"
 
 import '../styles/navbar.css'
 
 const Navbar = () =>{
     return(
+      <div className='navBar'>
         <div className="nav-container">
+        
               <div className='nav-left'>
                 <img className="logo" src="https://seeklogo.com/images/P/pexels-logo-EFB9232709-seeklogo.com.png" alt="logo"/>
             <h2 className='pexel1'>Pexels</h2>
@@ -53,7 +58,28 @@ const Navbar = () =>{
           <button className='upload'>Upload</button>
           </div>
           
+          
+     
     </div>
+    <div className='titles'>
+        <h1 className='title'>The best free stock photos, royalty free </h1>
+        <h1 className='title'>images & videos shared by creators.</h1>
+        </div>
+        <div className='search'>
+        <div className='drag'>   
+          <select>
+          <option><CiImageOn className="img"/> Photos</option>
+          <option><AiOutlinePlaySquare className="ved"/> Vedios</option>
+        </select>
+          </div>
+          <div>
+          <input className='find' type='text' placeholder='Search for free Photos'></input>
+          </div>
+          <div>
+          <BiSearchAlt2 className="icon"/>
+          </div>
+      </div>
+      </div>
       ) 
 
     }
