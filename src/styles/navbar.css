@@ -134,7 +134,7 @@ margin-left:10px;
       color:white;
       margin-left:35rem;
       margin-top: 2rem;
-  
+  border-radius: 2%;
   }
   .drag{
     margin-top:0.8rem;
@@ -154,3 +154,91 @@ margin-left:10px;
     color: green;
   }
 }
+
+.trends{
+  margin-left:35rem;
+margin-top: 2rem;
+display: flex;
+flex-direction: row;
+
+margin-left: 35rem;
+}
+
+
+
+.more{
+  cursor: pointer;
+width:1.5rem;
+height:1.5rem;
+  color: white;
+  border:1px solid;
+  border-radius: 50%;
+  background-color: grey;
+  &:hover{
+    color:rgb(226, 210, 210)
+  }
+ 
+}
+h4{
+  color:rgb(162, 160, 160);
+}
+p{
+  color:white;
+}
+.am:hover{
+  color:rgb(162, 160, 160)
+}
+.jl:hover{
+  color:rgb(162, 160, 160)
+}
+.fs:hover{
+  color:rgb(162, 160, 160)
+}
+
+.se:hover{
+  color:rgb(162, 160, 160)
+}
+
+.sy:hover{
+  color:rgb(162, 160, 160)
+}
+
+.btn{
+  color:rgb(162, 160, 160);
+  margin-top:10rem;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.he:hover{
+color:black;
+}
+.he{
+  cursor:pointer;
+
+}
+
+.vs:hover{
+  color:black;
+}
+.vs{
+  cursor:pointer;
+color: black;
+}
+.ld{
+  cursor:pointer;
+color: black;
+}
+.ld:hover{
+  color:black;
+}
+.cs{
+  cursor:pointer;
+
+
+  }
+  .cs:hover{
+    color:black;
+    
+  }

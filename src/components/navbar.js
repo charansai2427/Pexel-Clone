@@ -8,6 +8,7 @@ import { BiLogoYoutube } from 'react-icons/bi'
 import { CiImageOn } from 'react-icons/ci'
 import { AiOutlinePlaySquare } from "react-icons/ai"
 import  { BiSearchAlt2 } from "react-icons/bi"
+import { MdMoreHoriz } from "react-icons/md"
 
 import '../styles/navbar.css'
 
@@ -79,6 +80,31 @@ const Navbar = () =>{
           <BiSearchAlt2 className="icon"/>
           </div>
       </div>
+      <div className='trends'>
+      <h4>Trending:</h4>
+        <p><span  className='am'>american flag,</span><span className='jl'> 4th of july, </span><span className='fs'>fireworks,</span><span className='se'>space,</span><span className='sy'>sky</span></p>
+    
+        <MdMoreHoriz className='more'/>
+      </div>
+      <div className='home'>
+            <div className='btn'>
+              <button className='he'>Home </button>
+              <button className="vs">Vedios </button>
+              <button className='ld'>Leaderboard </button>
+              <button className='cs'>Challenges</button>
+
+            </div>
+            <div>
+                <h2>Free Stock Photos</h2>
+            </div>
+            <div>
+                <select className='down'>
+                    <option className='drop'>Trending</option>
+                    <option className='drop'>New</option>
+                    <option className='drop'>Following</option>
+                </select>
+            </div>
+        </div>
       </div>
       ) 
 
