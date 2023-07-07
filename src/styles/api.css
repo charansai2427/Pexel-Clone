@@ -23,5 +23,29 @@ body{
 
   button{
       display:flex;
-      
+      justify-content: center;
+      align-items: center;
   }
+
+   .love{
+    position: relative;
+cursor: pointer;
+&:hover{
+  color: rgb(82, 80, 80);
+}
+
+   }
+   .heart{
+   font-size: 1.5rem;
+  
+    color: transparent;
+    position:absolute;
+    top:1%;
+    right:0;
+    border:1px solid;
+    border-radius: 2px;
+   
+    &:hover{
+      color: white;
+    }
+   }

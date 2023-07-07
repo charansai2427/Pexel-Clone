@@ -1,6 +1,8 @@
 import { createClient } from 'pexels';
 import { useEffect, useState } from 'react';
 import Masonry from "react-masonry-css";
+
+import { SlHeart } from "react-icons/sl"
 import "../styles/api.css"
 export default function Client( ){
 const client = createClient('DnS6kIU35UjI6H608t9wBb6HN8ro2GFvK9msrGG0RoP97FdYHE07x4wC');
@@ -29,8 +31,9 @@ return(
         {
         data&& data.photos.map((e)=>{
                 return(
-                    <div>
-                        <img src={e.src.medium}/>
+                    <div className='love'>
+                        <SlHeart className='heart'/>
+                        <img src={e.src.original}/>
                     </div>
                 )
             })
@@ -41,3 +44,4 @@ return(
   </>
 )
 }
+
