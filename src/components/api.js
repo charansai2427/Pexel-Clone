@@ -1,8 +1,10 @@
 import { createClient } from 'pexels';
 import { useEffect, useState } from 'react';
 import Masonry from "react-masonry-css";
-
 import { SlHeart } from "react-icons/sl"
+import { BsBookmarks } from "react-icons/bs"
+import { BiDownload } from "react-icons/bi"
+
 import "../styles/api.css"
 export default function Client( ){
 const client = createClient('DnS6kIU35UjI6H608t9wBb6HN8ro2GFvK9msrGG0RoP97FdYHE07x4wC');
@@ -32,14 +34,18 @@ return(
         data&& data.photos.map((e)=>{
                 return(
                     <div className='love'>
+                        <BsBookmarks className='collect'/>
                         <SlHeart className='heart'/>
-                        <img src={e.src.original}/>
+                        <img src={e.src.original} />
+                        <BiDownload className='download'/>
                     </div>
                 )
             })
         }
   </Masonry>
-  <button onClick={()=>setPage(page+1)}>Load More</button>
+  <div className='load'>
+    <button  onClick={()=>setPage(page+1)}>Load More</button>
+  </div>
 
   </>
 )
