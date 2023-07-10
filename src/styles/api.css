@@ -22,9 +22,10 @@ body{
     
   }
   .my-masonry-grid_column > div > img { 
-    width:600px;
+    width:588px;
 
   }
+ 
 
   .load{
       display:flex;
@@ -87,3 +88,5 @@ cursor: pointer;
       background-color:grey;
     }
    }
+
+   

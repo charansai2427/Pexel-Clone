@@ -86,7 +86,7 @@ const Navbar = () =>{
     
         <MdMoreHoriz className='more'/>
       </div>
-      <div className='home'>
+    
             <div className='btn'>
               <button className='he'>Home </button>
               <button className="vs">Vedios </button>
@@ -94,7 +94,9 @@ const Navbar = () =>{
               <button className='cs'>Challenges</button>
 
             </div>
-            <div>
+
+            <div className='Home'>
+            <div className='head'>
                 <h2>Free Stock Photos</h2>
             </div>
             <div>
@@ -105,7 +107,8 @@ const Navbar = () =>{
                 </select>
             </div>
         </div>
-      </div>
+        </div>
+   
       ) 
 
     }
