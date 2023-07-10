@@ -1,4 +1,4 @@
-import { BsBell} from'react-icons/bs';
+import { IoIosNotifications} from'react-icons/io';
 import { BsPersonCircle } from 'react-icons/bs';
 import { BiLogoFacebook } from 'react-icons/bi'
 import { AiOutlineTwitter } from 'react-icons/ai'
@@ -11,8 +11,10 @@ import  { BiSearchAlt2 } from "react-icons/bi"
 import { MdMoreHoriz } from "react-icons/md"
 
 import '../styles/navbar.css'
+import { useRef } from 'react';
 
-const Navbar = () =>{
+const Navbar = ({setState}) =>{
+  const searchRef = useRef(null)
     return(
       <div className='navBar'>
         <div className="nav-container">
@@ -33,7 +35,7 @@ const Navbar = () =>{
             </select>
             <h4 className="license">License</h4>
           <div className='bell'>
-            <BsBell className="notification"/>
+            <IoIosNotifications className="notification"/>
           </div> 
            <div className='profile'>
             <BsPersonCircle className='profile1'/>
@@ -74,10 +76,10 @@ const Navbar = () =>{
         </select>
           </div>
           <div>
-          <input className='find' type='text' placeholder='Search for free Photos'></input>
+          <input className='find' type='text' placeholder='Search for free Photos' ref={searchRef}></input>
           </div>
           <div>
-          <BiSearchAlt2 className="icon"/>
+          <BiSearchAlt2 className="icon" onClick={() => setState(searchRef.current.value)}/>
           </div>
       </div>
       <div className='trends'>
@@ -108,7 +110,7 @@ const Navbar = () =>{
             </div>
         </div>
         </div>
-   
+      
       ) 
 
     }

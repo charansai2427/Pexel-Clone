@@ -34,14 +34,36 @@ body{
       text-align: center;
   }
 
-   .love{
+   /* .love{
     position: relative;
 cursor: pointer;
 &:hover{
   color: rgb(82, 80, 80);
 }
 
-   }
+   } */
+
+
+   /* .love:hover svg {
+    position: relative;
+    color: red
+   } */
+.show{
+  height:70vh;
+  width:30vw;
+  display:block;
+  position: fixed;
+  background-color: white;
+  top:40px;
+  left:0%;
+  right:0%;
+  z-index: 1;
+  margin: auto;
+}
+.block{
+  display:none;
+}
+
    .heart{
    font-size: 1.5rem;
   

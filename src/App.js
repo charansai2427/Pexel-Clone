@@ -1,10 +1,15 @@
 import Navbar from "./components/navbar";
 import Client from "./components/api";
+import { useState } from "react";
+
 function App() {
-  return (
+  const [ state,setState] = useState("nature")
+  
+   return (
     <div className="App">
-<Navbar/>
-< Client/>
+<Navbar setState={setState}/>
+< Client query={state}/>
+
     </div>
   );
 }
