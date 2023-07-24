@@ -6,7 +6,7 @@
   }
 
   .navBar{
-    width:100%;
+    width:100vw;
     height:75vh;
     background-image: url("https://images.pexels.com/photos/16959094/pexels-photo-16959094.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=500&w=2000");
     background-repeat: no-repeat;
