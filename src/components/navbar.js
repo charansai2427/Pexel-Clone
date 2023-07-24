@@ -89,7 +89,7 @@ const Navbar = ({setState}) =>{
         <MdMoreHoriz className='more'/>
       </div>
     
-            <div className='btn'>
+            {/* <div className='btn'>
               <button className='he'>Home </button>
               <button className="vs">Vedios </button>
               <button className='ld'>Leaderboard </button>
@@ -108,7 +108,7 @@ const Navbar = ({setState}) =>{
                     <option className='drop'>Following</option>
                 </select>
             </div>
-        </div>
+        </div> */}
         </div>
       
       ) 
