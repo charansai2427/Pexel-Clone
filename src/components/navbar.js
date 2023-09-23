@@ -13,7 +13,7 @@ import { MdMoreHoriz } from "react-icons/md"
 import '../styles/navbar.css'
 import { useRef } from 'react';
 
-const Navbar = ({setState}) =>{
+  const Navbar = ({setState}) =>{
   const searchRef = useRef(null)
     return(
       <div className='navBar'>
@@ -24,41 +24,45 @@ const Navbar = ({setState}) =>{
             <h2 className='pexel1'>Pexels</h2>
             </div>
             <div className="nav-right">
-            <select className="nav-explore-links">
-                <option ><h3 className="nav-explore">Explore</h3></option>
-                <option className="nav-explore">Discover Photos</option>
-                <option className="nav-explore">Popular Searches</option>
-                <option className="nav-explore">Leaderboard</option>
-                <option className="nav-explore">Challenges</option>
-                <option className="nav-explore">Free Vedios</option>
-                <option className="nav-explore">Pexels Blog</option>
-            </select>
+            <div class="dropdown">
+            <p class="dropbtn">Explore </p>
+            <div class="dropdown-content">
+              <a href="#">Discover Photos</a>
+              <a href="#">Popular Searches</a>
+              <a href="#">LeaderBoard</a>
+              <a href="#">Challenges</a>
+              <a href="#">Free Vedios</a>
+              <a href="#">Pexels Blog</a>
+            </div>
+          </div>
             <h4 className="license">License</h4>
           <div className='bell'>
             <IoIosNotifications className="notification"/>
           </div> 
            <div className='profile'>
             <BsPersonCircle className='profile1'/>
-      <select className='login'>
-        <option className='login-links'></option>
-        <option className='login-links'>Your Collections</option>
-        <option className='login-links'>Setings</option>
-        <option className='login-links'>Change Language</option>
-        <option className='login-links'>Logout</option>
-        <option className='login-links'>Image & Vedio API</option>
-        <option className='login-links'>Apps & Plugins</option>
-        <option className='login-links'>FAQ</option>
-        <option className='login-links'>Partnership</option>
-        <option className='login-links'>Imprint & Terms</option>
-        <option className='login-links'></option>
-        <BiLogoFacebook className='link'/>
-        <AiOutlineTwitter className='link'/>
-        <AiOutlineInstagram className='link'/>
-        <BiLogoPinterestAlt className='link'/>
-        <BiLogoYoutube className='link'/>
-      </select>
+            <div  className="dawn">
+               <p className="downbtn">...</p>
+               <div className="drop-content">
+               <a href="#">Login</a>
+               <a href="#">Join</a>
+               <a href="#">Change Language</a>
+               <a href="#">Image & Vedios API</a>
+               <a href="#">Apps & Plugins</a>
+               <a href="#">FAQ</a>
+               <a href="#">Partnerships</a>
+               <a href="#">Imprint & Terms</a>
+               <div className='icons'>
+                <BiLogoFacebook/>
+                <AiOutlineTwitter/>
+                <AiOutlineInstagram/>
+                <BiLogoPinterestAlt/>
+                <BiLogoYoutube/>
+               </div>
+               </div>
+               </div>
           </div>
-          <button className='upload'>Upload</button>
+          <h3 className='upload'>Upload</h3>
           </div>
           
           
@@ -95,20 +99,24 @@ const Navbar = ({setState}) =>{
               <button className='ld'>Leaderboard </button>
               <button className='cs'>Challenges</button>
 
-            </div> 
+            </div>  
 
-            <div className='Home'>
+          
             <div className='head'>
                 <h2>Free Stock Photos</h2>
             </div>
             <div>
-                <select className='down'>
-                    <option className='drop'>Trending</option>
-                    <option className='drop'>New</option>
-                    <option className='drop'>Following</option>
-                </select>
+
+            <div className='rend'>
+              <p className='rend-btn'>Trending</p>
+                <div className='content'>
+                    <a href='#'>Trending</a>
+                    <a href='#'>New</a>
+                    <a href='#'>Following</a>
+                </div>
             </div>
-        </div> 
+            </div>
+
         </div>
       
       ) 
