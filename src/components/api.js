@@ -18,7 +18,7 @@ const [sizes , setSizes ] = useState();
 useEffect(()=>{
     client.photos.search({ query, per_page:80,page}).then(res => {
         console.log(res);
-        setData({photos:[...res.photos]})
+        setData({photos:[...data?.photos,...res.photos]})
     });
     
 },[page,query])
@@ -53,7 +53,7 @@ return(
                     <div className='love'>
                         <BsBookmarks className='collect'/>
                         <SlHeart className='heart'/>
-                        <img onClick={() => {setcheck(e.src);setShow(true)}} src={e.src.medium} />
+                        <img onClick={() => {setcheck(e.src);setShow(true)}} src={e.src.medium } />
                         <BiDownload className='download'/>
                         
                     </div>
@@ -64,7 +64,7 @@ return(
         }
   </Masonry>
   <div className='load'>
-    <button  onClick={()=>setPage(page+1)}>Load More</button>
+    <button onClick={()=>setPage(page+1)}>Load More</button>
   </div>
 
   </>
