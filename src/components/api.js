@@ -18,7 +18,8 @@ const [sizes , setSizes ] = useState();
 useEffect(()=>{
     client.photos.search({ query, per_page:80,page}).then(res => {
         console.log(res);
-        setData({photos:[...data?.photos,...res.photos]})
+                // setData({photos:[...res.photos]})        this command line will be for which you are searching it will be displayed when you click on load more it displayed 2nd page after 1st page
+        setData({photos:[...data?.photos,...res.photos]})          // this command line will bbe for which you are searching it will be displayed when you click on load more it displayed as infinity scroll down in single page it will be displayed all things
     });
     
 },[page,query])
