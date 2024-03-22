@@ -10,22 +10,21 @@ body{
     display: -webkit-box;
     display: -ms-flexbox; 
     display: flex;
-    margin-right: -100px;  
+    margin-right: -90px;  
     width: auto;
   }
   .my-masonry-grid_column {
-    padding-left: 70px;
+    padding-left: 25px;
     background-clip: padding-box;
+    margin-top:-6em;
   }
 
   .my-masonry-grid_column > div { 
-    background: grey;
-    margin-bottom: 30px;
+    margin-bottom: 1px;
     
   }
   .my-masonry-grid_column > div > img { 
-    width:440px;
-   
+    width:400px;
   }
  
 
