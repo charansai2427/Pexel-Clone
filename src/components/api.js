@@ -30,7 +30,7 @@ export default function Client({ query }) {
         <>
             <div className={show ? 'show' : 'block'}>
                 < button onClick={() => setShow(false)} style={{ color: 'gray', marginRight: '0em' }}>X</button>
-                <img src={check} />
+                <img src={check} alt="Preview" />
 
                 <select className='mp' onChange={(e) => setSizes(e.target.value)}>
 
@@ -55,7 +55,7 @@ export default function Client({ query }) {
                                 <div className='love'>
                                     <BsBookmarks className='collect' />
                                     <SlHeart className='heart' />
-                                    <img onClick={() => { setcheck(e.src); setShow(true) }} src={e.src.original} />
+                                    <img onClick={() => { setcheck(e.src.original); setShow(true) }} src={e.src.original} alt="Selected" />
                                     <BiDownload className='download' />
 
                                 </div>
